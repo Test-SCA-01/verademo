@@ -83,6 +83,13 @@
 			<artifactId>logback-core</artifactId>
 			<version>1.5.25</version>
 		</dependency>
+		<!-- Pin transitive dependency org.apache.tomcat.embed:tomcat-embed-core for security upgrade -->
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-core</artifactId>
+			<version>9.0.121</version>
+		</dependency>
+
 
 
 		<!-- Apache Commons dependencies -->
