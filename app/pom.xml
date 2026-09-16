@@ -24,6 +24,13 @@
 
 	<!-- Dependencies begin here -->
 	<dependencies>
+		<!-- Pin transitive dependency org.apache.tomcat.embed:tomcat-embed-core to address security vulnerabilities -->
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-core</artifactId>
+			<version>9.0.121</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
 			<artifactId>tomcat-embed-jasper</artifactId>
