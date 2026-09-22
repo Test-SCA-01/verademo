@@ -21,6 +21,20 @@
 		<springboot.version>2.3.1.RELEASE</springboot.version>
 		<fileupload.version>1.3.2</fileupload.version>
 	</properties>
+	<!-- Dependency Management for version overrides -->
+	<dependencyManagement>
+		<dependencies>
+			<!-- Pin commons-httpclient to safe version: CVE-2012-5783, CVE-2012-6153 -->
+			<!-- Transitive dependency migrated to new coordinates: org.apache.httpcomponents:httpclient -->
+			<!-- Remove when all parent dependencies are upgraded to versions that include safe transitive -->
+			<dependency>
+				<groupId>org.apache.httpcomponents</groupId>
+				<artifactId>httpclient</artifactId>
+				<version>4.5.14</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
 
 	<!-- Dependencies begin here -->
 	<dependencies>
