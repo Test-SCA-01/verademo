@@ -28,7 +28,6 @@ If you don't already have Docker this is a prerequisite.
 ```
 docker run --rm -it -p 127.0.0.1:8080:8080 veracode/vulnerable-verademo-java
 ```
-
 Navigate to: http://127.0.0.1:8080.
 
 ## Exploitation Demos
